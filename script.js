@@ -7,22 +7,22 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Prio Prastyo ♥️";
+  sender = "Prio";
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = sender;
-footer.href = "https://www.instagram.com/login/";
+footer.href = "https://api.whatsapp.com/send?phone=6285770598246";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo Sayangku", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
-    Swal.fire("Jawab yang jujur ya!").then(function () {
+  Swal.fire("Hallo Cayang", "Aku ada pertanyaan nih buat kamu?", "question").then(function () {
+    Swal.fire("Jawab dengan jujur ya!").then(function () {
       Swal.fire("Awas aja kalo boong!!", "", "error").then(function () {
 
         const {
           value: name
         } = Swal.fire({
-          title: 'Masukin nama kamu dulu kak',
+          title: 'Masukin nama kamu dulu dong!',
           input: 'text',
           inputLabel: '',
           showCancelButton: true,
@@ -69,11 +69,11 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       if (result.isConfirmed) {
                         Swal.fire(`Huhu iya ${sender} juga kangen ${nama} :((`).then(function () {
                           Swal.fire('Terakhir deh sayang').then(function () {
-                            Swal.fire('Coba klik ikon hati di paling bawah dong')
+                            Swal.fire('Coba klik ikon hati di paling bawah dong! Yang kecil paling bawah yah!')
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('Jahat banget emang ga kangen sama pacar sendiri ಥ_ಥ', '', 'error').then(function () {
+                        Swal.fire('Ih, kok kamu jahat banget sih huuu ಥ_ಥ', '', 'error').then(function () {
                           Swal.fire('Yaudah deh bye!')
                         })
                       }
