@@ -1,2 +1,1 @@
-# https://prioprast.github.io/gans/
-# copy aja bang wkwkwk
+# copy here https://prioprast.github.io/buat_kamu-xixi/?by=namamu
