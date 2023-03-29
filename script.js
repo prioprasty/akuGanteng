@@ -7,7 +7,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Prio";
+  sender = "prio";
 }
 
 let footer = document.getElementById("credit");
@@ -22,13 +22,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
         const {
           value: name
         } = Swal.fire({
-          title: 'Masukin nama kamu dulu dong!',
+          title: 'Masukin nama kamu dulu.',
           input: 'text',
           inputLabel: '',
           showCancelButton: true,
           inputValidator: (value) => {
             if (!value) {
-              return 'Isi dulu dong beb xixi'
+              return 'Isi dulu dong!'
             } else {
               nama = value;
             }
